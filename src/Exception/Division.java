@@ -5,9 +5,13 @@ import java.util.Scanner;
 
 public class Division extends CustomException{
 
+	public int divide(int a, int b) {
+		return a/b;
+	}
 	public static void main(String [] args) {
 		Scanner kb=new Scanner(System.in);
 		try {
+			Division d=new Division();
 			System.out.println("Enter two values fron division.\nAnd 1st number must be greater than 2nd.");
 			System.out.println("Enter 1st number:");
 			int a=kb.nextInt();
@@ -22,7 +26,7 @@ public class Division extends CustomException{
 			if(a<b) {
 				throw new CustomException("ERROR!\n1st number can't be smaller than 2nd number!");
 			}
-			System.out.println("Division of a/b is:"+a/b);
+			System.out.println("Division of a/b is:"+ d.divide(a,b));
 
 		}
 		catch(CustomException nvx) {

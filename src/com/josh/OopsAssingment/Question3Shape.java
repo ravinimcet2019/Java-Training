@@ -1,4 +1,4 @@
-package OopsAssingment;
+package com.josh.OopsAssingment;
 
 public class Question3Shape {
     protected String color;

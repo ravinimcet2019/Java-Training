@@ -1,2 +1,6 @@
 module JavaTraining {
+	requires junit;
+
+	
+	
 }
